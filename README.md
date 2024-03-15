@@ -56,3 +56,83 @@ You can navigate through the services with the arrow
 keys or click on them with the mouse.
 
 To exit the UI, simply press <kbd>Ctrl</kbd> + <kbd>C</kbd> as you would normally.
+
+## Into Devbox
+
+This section is a brief introduction to Devbox. It will cover the basics of
+Devbox, such as adding packages and starting a shell.
+
+### Adding Packages
+
+Within the Devbox shell, we get access to the `devbox` CLI, which provides us
+with 2 very convenient commands: `devbox search` and `devbox add`.
+
+First, we can use `devbox search` to search for a package. For example, if we
+run `devbox search httpie`, we will see a list of packages that match the
+search term:
+
+```
+―❤―▶ devbox search httpie
+Found 9+ results for "httpie":
+
+* httpie  (3.2.2, 3.2.1, 3.1.0, 3.0.2, 2.6.0, 2.5.0, 2.4.0, 2.2.0, 2.1.0)
+* python39Packages.httpie  (3.2.1)
+* python310Packages.httpie  (3.2.2, 3.2.1)
+* python311Packages.httpie  (3.2.2, 3.2.1)
+* python312Packages.httpie  (3.2.2)
+* python39Packages.httpie-ntlm  (1.0.2)
+* python310Packages.httpie-ntlm  (1.0.2)
+* python311Packages.httpie-ntlm  (1.0.2)
+* python312Packages.httpie-ntlm  (1.0.2)
+```
+
+We can then use `devbox add` to add the package to our environment:
+
+```
+―❤―▶ devbox add httpie
+Info: Adding package "httpie@latest" to devbox.json
+[1/5] python310
+[1/5] python310: Success
+[2/5] python310Packages.pip
+[2/5] python310Packages.pip: Success
+[3/5] nodejs_21
+[3/5] nodejs_21: Success
+[4/5] pyright
+[4/5] pyright: Success
+[5/5] httpie
+[5/5] httpie: Success
+✓ Computed the Devbox environment.
+Warning: Your shell environment may be out of date. Run `refresh` to update it.
+```
+
+Then, we can run `refresh` to update our environment. This will install the
+`httpie` package into our current environment. Future `devbox shell`
+invocations will have `httpie` available.
+
+> [!TIP]
+> If you look at the `git diff`, you'll see that our `devbox` tool has modified
+> its JSON file to remember this:
+>
+> ```diff
+> diff --git a/devbox.json b/devbox.json
+> index be556ec..bf72391 100644
+> --- a/devbox.json
+> +++ b/devbox.json
+> @@ -3,7 +3,8 @@
+>      "python@3.10",
+>      "python310Packages.pip",
+>      "nodejs@latest",
+> -    "pyright@latest"
+> +    "pyright@latest",
+> +    "httpie@latest"
+>    ],
+>    "shell": {
+>      "init_hook": [
+> ```
+>
+> This is how Devbox remembers the state of your environment for future
+> invocations.
+
+> [!NOTE]
+> Devbox's [Quickstart](https://www.jetpack.io/devbox/docs/quickstart/) guide
+> goes into more detail about this.

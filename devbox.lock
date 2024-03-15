@@ -1,6 +1,12 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "httpie@latest": {
+      "last_modified": "2024-03-08T13:51:52Z",
+      "resolved": "github:NixOS/nixpkgs/a343533bccc62400e8a9560423486a3b6c11a23b#httpie",
+      "source": "devbox-search",
+      "version": "3.2.2"
+    },
     "nodejs@latest": {
       "last_modified": "2024-03-09T07:11:56Z",
       "resolved": "github:NixOS/nixpkgs/0e7f98a5f30166cbed344569426850b21e4091d4#nodejs_21",

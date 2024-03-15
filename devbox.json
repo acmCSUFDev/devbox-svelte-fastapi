@@ -3,7 +3,8 @@
     "python@3.10",
     "python310Packages.pip",
     "nodejs@latest",
-    "pyright@latest"
+    "pyright@latest",
+    "httpie@latest"
   ],
   "shell": {
     "init_hook": [
