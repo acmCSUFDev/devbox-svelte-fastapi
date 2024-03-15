@@ -46,5 +46,13 @@ devbox services up
 ```
 
 This will open up a terminal UI that lists all the services defined in the
-`process-compose.yml` file. You can navigate through the services with the arrow
+`process-compose.yml` file:
+
+<div align="center">
+  <img alt="image" width="800" src="https://github.com/acmCSUFDev/devbox-svelte-fastapi/assets/8463786/54600456-2a15-4968-af7c-20f6a4c4c89e" />
+</div>
+
+You can navigate through the services with the arrow
 keys or click on them with the mouse.
+
+To exit the UI, simply press <kbd>Ctrl</kbd> + <kbd>C</kbd> as you would normally.
