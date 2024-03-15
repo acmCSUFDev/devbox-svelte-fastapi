@@ -72,6 +72,16 @@ You get all the benefits of Nix, such as reproducibility and isolation, without
 needing to learn Nix. This makes Devbox a great tool for teams that aren't
 interested in getting into Nix or simply want to get up and running quickly.
 
+### Visual Studio Code Integration
+
+Devbox provides a VSCode extension that automatically loads the Devbox shell
+for you when you open your project. You can download the extension via [the
+Visual Studio Code
+Marketplace](https://marketplace.visualstudio.com/items?itemName=jetpack-io.devbox).
+
+- Extension Name: devbox by jetpack.io
+- Extension URL: https://marketplace.visualstudio.com/items?itemName=jetpack-io.devbox
+
 ### Adding Packages
 
 Within the Devbox shell, we get access to the `devbox` CLI, which provides us
