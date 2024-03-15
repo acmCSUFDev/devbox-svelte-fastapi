@@ -62,6 +62,16 @@ To exit the UI, simply press <kbd>Ctrl</kbd> + <kbd>C</kbd> as you would normall
 This section is a brief introduction to Devbox. It will cover the basics of
 Devbox, such as adding packages and starting a shell.
 
+### How is this compared to Nix?
+
+Keen observers might notice that Devbox uses Nix under the hood. The main
+advantage with using Devbox over Nix Shell/Flake is that **Devbox does not
+require you to know Nix, nor does it require any Nix files**.
+
+You get all the benefits of Nix, such as reproducibility and isolation, without
+needing to learn Nix. This makes Devbox a great tool for teams that aren't
+interested in getting into Nix or simply want to get up and running quickly.
+
 ### Adding Packages
 
 Within the Devbox shell, we get access to the `devbox` CLI, which provides us
