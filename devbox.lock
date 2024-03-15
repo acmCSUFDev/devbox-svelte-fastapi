@@ -1,0 +1,24 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "nodejs@latest": {
+      "last_modified": "2024-03-09T07:11:56Z",
+      "resolved": "github:NixOS/nixpkgs/0e7f98a5f30166cbed344569426850b21e4091d4#nodejs_21",
+      "source": "devbox-search",
+      "version": "21.7.1"
+    },
+    "pyright@latest": {
+      "last_modified": "2023-02-24T09:01:09Z",
+      "resolved": "github:NixOS/nixpkgs/7d0ed7f2e5aea07ab22ccb338d27fbe347ed2f11#pyright",
+      "source": "devbox-search",
+      "version": "1.1.292"
+    },
+    "python@3.10": {
+      "last_modified": "2024-03-08T13:51:52Z",
+      "plugin_version": "0.0.3",
+      "resolved": "github:NixOS/nixpkgs/a343533bccc62400e8a9560423486a3b6c11a23b#python310",
+      "source": "devbox-search",
+      "version": "3.10.13"
+    }
+  }
+}
