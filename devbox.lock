@@ -13,6 +13,11 @@
       "source": "devbox-search",
       "version": "1.1.292"
     },
+    "python310Packages.pip": {
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#python310Packages.pip",
+      "source": "nixpkg"
+    },
     "python@3.10": {
       "last_modified": "2024-03-08T13:51:52Z",
       "plugin_version": "0.0.3",
